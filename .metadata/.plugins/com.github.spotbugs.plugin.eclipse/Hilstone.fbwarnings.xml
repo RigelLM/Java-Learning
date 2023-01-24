@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.1" sequence="13" timestamp="1663278833134" analysisTimestamp="1663278832942" release="">
+  <Project projectName="Hilstone">
+    <Jar>D:\Desktop\Java\Hilstone\bin\Hilstone4.class</Jar>
+    <AuxClasspathEntry>D:\Desktop\Java\Hilstone\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>D:\Desktop\Java\Hilstone\src</SrcDir>
+    <SrcDir>D:\Desktop\Java\Hilstone\test</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 15 Sep 2022 17:53:52 -0400" total_classes="1" referenced_classes="18" total_bugs="0" total_size="49" num_packages="1" java_version="17.0.1" vm_version="17.0.1+12" cpu_seconds="0.45" clock_seconds="0.19" peak_mbytes="1193.30" alloc_mbytes="2048.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="49">
+      <ClassStats class="Hilstone4" sourceFile="Hilstone4.java" interface="false" size="49" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="45" invocations="373" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="8576" standardDeviationMicrosecondsPerInvocation="475"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="40" invocations="2" avgMicrosecondsPerInvocation="20353" maxMicrosecondsPerInvocation="36481" standardDeviationMicrosecondsPerInvocation="16128"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="38" invocations="374" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="449" standardDeviationMicrosecondsPerInvocation="58"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1661954310429" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1661954310433" release="" codeSize="42" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1661954538068" release="" codeSize="42" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1661954574187" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1661954595704" release="" codeSize="42" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1661957284420" release="" codeSize="42" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1661957304691" release="" codeSize="41" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1662524333076" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1662524582512" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1662524616854" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1662524659650" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1662524847077" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1662524910292" release="" codeSize="49" numClasses="1"/>
+  </History>
+</BugCollection>

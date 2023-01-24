@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.1" sequence="1" timestamp="1661457786560" analysisTimestamp="1661457785493" release="">
+  <Project projectName="MyProject">
+    <Jar>D:\Desktop\Java\MyProject\bin\HellowJack.class</Jar>
+    <AuxClasspathEntry>D:\Desktop\Java\MyProject\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>D:\Desktop\Java\MyProject\test</SrcDir>
+    <SrcDir>D:\Desktop\Java\MyProject\src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 25 Aug 2022 16:03:05 -0400" total_classes="1" referenced_classes="16" total_bugs="0" total_size="10" num_packages="1" java_version="17.0.1" vm_version="17.0.1+12" cpu_seconds="9.00" clock_seconds="1.09" peak_mbytes="485.76" alloc_mbytes="2048.00" gc_seconds="0.02">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="10">
+      <ClassStats class="HellowJack" sourceFile="HellowJack.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="425" invocations="2" avgMicrosecondsPerInvocation="212662" maxMicrosecondsPerInvocation="266522" standardDeviationMicrosecondsPerInvocation="53858"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="187" invocations="329" avgMicrosecondsPerInvocation="569" maxMicrosecondsPerInvocation="12255" standardDeviationMicrosecondsPerInvocation="1242"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="57" invocations="330" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="731" standardDeviationMicrosecondsPerInvocation="118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="35" invocations="16" avgMicrosecondsPerInvocation="2240" maxMicrosecondsPerInvocation="11766" standardDeviationMicrosecondsPerInvocation="3518"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="35" invocations="2" avgMicrosecondsPerInvocation="17516" maxMicrosecondsPerInvocation="34600" standardDeviationMicrosecondsPerInvocation="17084"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="25" invocations="46" avgMicrosecondsPerInvocation="563" maxMicrosecondsPerInvocation="6319" standardDeviationMicrosecondsPerInvocation="930"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="24" invocations="16" avgMicrosecondsPerInvocation="1527" maxMicrosecondsPerInvocation="9899" standardDeviationMicrosecondsPerInvocation="2511"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1661457786558" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

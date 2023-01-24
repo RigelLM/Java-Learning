@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+<title>Personal Information</title>
+</head>
+<body>
+<h1>The first title</h1>
+<p>The first pararaph</p>
+<h1>Self Introduction</h1>
+<h2>1.Basic Information</h2>
+<table border="1">
+    <tr>
+        <td>First Name:</td><td>Lee</td>
+    </tr>
+    <tr>
+        <td>Last Name:</td><td>Li</td>
+    </tr>
+    <tr>
+        <td>Gender:</td><td>Male</td>
+    </tr>
+    <tr>
+        <td>Hobby:</td><td>Tennis</td>
+    </tr>
+    <tr>
+        <td>Phone Number:</td><td>(706)218-5248</td>
+    </tr>
+</table>
+<img src="pulpit.jpg" alt="Pulpit rock" width="304" height="228">
+<ul>
+<li>Coffee</li>
+<li>Milk</li>
+</ul>
+</body>
+</html>

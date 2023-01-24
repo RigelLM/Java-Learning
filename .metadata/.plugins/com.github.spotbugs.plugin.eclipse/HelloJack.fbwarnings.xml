@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.1" sequence="10" timestamp="1673640249273" analysisTimestamp="1673640248990" release="">
+  <Project projectName="HelloJack">
+    <Jar>D:\Desktop\Java\HelloJack\bin\HelloJack.class</Jar>
+    <AuxClasspathEntry>D:\Desktop\Java\HelloJack\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Serein\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>D:\Desktop\Java\HelloJack\test</SrcDir>
+    <SrcDir>D:\Desktop\Java\HelloJack\src</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="2">
+    <Class classname="HellowJack">
+      <SourceLine classname="HellowJack" sourcefile="HellowJack.java" sourcepath="HellowJack.java"/>
+    </Class>
+    <Method classname="HellowJack" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="HellowJack" start="27" end="41" startBytecode="0" endBytecode="33" sourcefile="HellowJack.java" sourcepath="HellowJack.java"/>
+    </Method>
+    <LocalVariable name="name" register="3" pc="24" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="HellowJack" start="32" end="32" startBytecode="23" endBytecode="23" sourcefile="HellowJack.java" sourcepath="HellowJack.java"/>
+    <SourceLine classname="HellowJack" start="32" end="32" startBytecode="23" endBytecode="23" sourcefile="HellowJack.java" sourcepath="HellowJack.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="name"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="2">
+    <Class classname="HellowJack">
+      <SourceLine classname="HellowJack" sourcefile="HellowJack.java" sourcepath="HellowJack.java"/>
+    </Class>
+    <Method classname="HellowJack" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="HellowJack" start="27" end="41" startBytecode="0" endBytecode="182" sourcefile="HellowJack.java" sourcepath="HellowJack.java"/>
+    </Method>
+    <SourceLine classname="HellowJack" start="32" end="32" startBytecode="20" endBytecode="20" sourcefile="HellowJack.java" sourcepath="HellowJack.java"/>
+    <SourceLine classname="HellowJack" start="32" end="32" startBytecode="20" endBytecode="20" sourcefile="HellowJack.java" sourcepath="HellowJack.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 13 Jan 2023 15:04:08 -0500" total_classes="1" referenced_classes="17" total_bugs="2" total_size="13" num_packages="1" java_version="17.0.1" vm_version="17.0.1+12" cpu_seconds="0.14" clock_seconds="0.28" peak_mbytes="1028.90" alloc_mbytes="2048.00" gc_seconds="0.00" priority_2="2">
+    <PackageStats package="" total_bugs="2" total_types="2" total_size="13" priority_2="2">
+      <ClassStats class="HelloJack" sourceFile="HelloJack.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="63" invocations="2" avgMicrosecondsPerInvocation="31509" maxMicrosecondsPerInvocation="51950" standardDeviationMicrosecondsPerInvocation="20441"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="62" invocations="371" avgMicrosecondsPerInvocation="168" maxMicrosecondsPerInvocation="566" standardDeviationMicrosecondsPerInvocation="90"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="57" invocations="370" avgMicrosecondsPerInvocation="154" maxMicrosecondsPerInvocation="2048" standardDeviationMicrosecondsPerInvocation="265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="14" invocations="17" avgMicrosecondsPerInvocation="844" maxMicrosecondsPerInvocation="4628" standardDeviationMicrosecondsPerInvocation="1378"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1661519136561" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1661519136563" release="" codeSize="10" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1661519300872" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1661519359778" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1661519400572" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1661519414121" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1661519598011" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1673640055204" release="" codeSize="10" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1673640221727" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1673640239857" release="" codeSize="13" numClasses="1"/>
+  </History>
+</BugCollection>

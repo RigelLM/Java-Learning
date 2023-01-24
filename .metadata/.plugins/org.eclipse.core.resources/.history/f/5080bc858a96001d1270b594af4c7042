@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+<title>Personal Information</title>
+</head>
+<body>
+<h1>Self Introduction</h1>
+<h2>1.Basic Information</h2>
+<table border="1">
+    <tr>
+        <td>First Name:</td><td>Lee</td>
+    </tr>
+    <tr>
+        <td>Last Name:</td><td>Li</td>
+    </tr>
+    <tr>
+        <td>Gender:</td><td>Male</td>
+    </tr>
+    <tr>
+        <td>Hobby:</td><td>Tennis</td>
+    </tr>
+    <tr>
+        <td>Phone Number:</td><td>(706)218-5248</td>
+    </tr>
+</table>
+<h2>2.My hobby</h2>
+<ul>
+<li>Playing tennis</li>
+<li>Listening to music</li>
+<li>Playing computer games on Steam</li>
+</ul>
+<h2>3.My favorite stuffs</h2>
+<img src="cat.jpg" alt="My Cat" width="360" height="1299/3">
+</body>
+</html>
