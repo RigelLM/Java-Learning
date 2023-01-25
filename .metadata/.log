@@ -5291,3 +5291,170 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-01-25 14:59:33.296 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2023-01-25 15:01:09.863
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-25 15:01:09.863
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,打开类型,
+		在 Java 编辑器中打开类型,
+		Category(org.eclipse.ui.category.navigate,导航,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2e20c20b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d167630,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-25 15:01:09.863
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,重命名 － 重构,
+		重命名所选元素,
+		Category(org.eclipse.jdt.ui.category.refactoring,重构器 － Java,Java 重构操作,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3bc18fec,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,重命名,
+		重命名所选项,
+		Category(org.eclipse.ui.category.file,文件,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1eee9b78,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2023-01-25 15:01:15.099
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-25 15:01:15.700
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Serein'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.github.spotbugs.plugin.eclipse 1 0 2023-01-25 15:05:39.045
+!MESSAGE creating new bug collection: D:\Desktop\Java\.metadata\.plugins\com.github.spotbugs.plugin.eclipse\CoinChange.fbwarnings.xml
+
+!ENTRY net.sf.eclipsecs.core 4 0 2023-01-25 15:14:16.437
+!MESSAGE Checkstyle-Plugin: Exception was thrown while processing D:\Desktop\Java\CoinChange\src\CoinChange1.java
+!STACK 0
+com.puppycrawl.tools.checkstyle.api.CheckstyleException: Exception was thrown while processing D:\Desktop\Java\CoinChange\src\CoinChange1.java
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:305)
+	at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:224)
+	at net.sf.eclipsecs.core.builder.Auditor.runAudit(Auditor.java:146)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.handleBuildSelection(CheckstyleBuilder.java:307)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.build(CheckstyleBuilder.java:173)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:853)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:389)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:410)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:160)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.puppycrawl.tools.checkstyle.api.CheckstyleException: IllegalStateException occurred while parsing file D:\Desktop\Java\CoinChange\src\CoinChange1.java.
+	at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:105)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)
+	at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)
+	at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:331)
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:292)
+	... 16 more
+Caused by: java.lang.IllegalStateException: 22:4: no viable alternative at input '}'
+	at com.puppycrawl.tools.checkstyle.JavaParser$CheckstyleErrorListener.syntaxError(JavaParser.java:252)
+	at org.antlr.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:41)
+	at org.antlr.v4.runtime.Parser.notifyErrorListeners(Parser.java:544)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportNoViableAlternative(DefaultErrorStrategy.java:310)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportError(DefaultErrorStrategy.java:136)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.variableInitializer(JavaLanguageParser.java:3736)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.variableDeclarator(JavaLanguageParser.java:3531)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.variableDeclarators(JavaLanguageParser.java:3440)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.localVariableDeclaration(JavaLanguageParser.java:6178)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.blockStatement(JavaLanguageParser.java:6090)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.block(JavaLanguageParser.java:6007)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.methodBody(JavaLanguageParser.java:2897)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.methodDeclaration(JavaLanguageParser.java:2856)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.memberDeclaration(JavaLanguageParser.java:2704)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.classBodyDeclaration(JavaLanguageParser.java:2631)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.classBody(JavaLanguageParser.java:2442)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.classDeclaration(JavaLanguageParser.java:1084)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.types(JavaLanguageParser.java:744)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.typeDeclaration(JavaLanguageParser.java:659)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.compilationUnit(JavaLanguageParser.java:411)
+	at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:99)
+	... 20 more
+Caused by: org.antlr.v4.runtime.NoViableAltException
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.variableInitializer(JavaLanguageParser.java:3731)
+	... 35 more
+
+!ENTRY net.sf.eclipsecs.core 4 0 2023-01-25 15:33:38.037
+!MESSAGE Checkstyle-Plugin: Exception was thrown while processing D:\Desktop\Java\CoinChange\src\CoinChange1.java
+!STACK 0
+com.puppycrawl.tools.checkstyle.api.CheckstyleException: Exception was thrown while processing D:\Desktop\Java\CoinChange\src\CoinChange1.java
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:305)
+	at com.puppycrawl.tools.checkstyle.Checker.process(Checker.java:224)
+	at net.sf.eclipsecs.core.builder.Auditor.runAudit(Auditor.java:146)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.handleBuildSelection(CheckstyleBuilder.java:307)
+	at net.sf.eclipsecs.core.builder.CheckstyleBuilder.build(CheckstyleBuilder.java:173)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:853)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:232)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:281)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:334)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:337)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:389)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:410)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:160)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.puppycrawl.tools.checkstyle.api.CheckstyleException: IllegalStateException occurred while parsing file D:\Desktop\Java\CoinChange\src\CoinChange1.java.
+	at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:105)
+	at com.puppycrawl.tools.checkstyle.TreeWalker.processFiltered(TreeWalker.java:152)
+	at com.puppycrawl.tools.checkstyle.api.AbstractFileSetCheck.process(AbstractFileSetCheck.java:87)
+	at com.puppycrawl.tools.checkstyle.Checker.processFile(Checker.java:331)
+	at com.puppycrawl.tools.checkstyle.Checker.processFiles(Checker.java:292)
+	... 16 more
+Caused by: java.lang.IllegalStateException: 35:18: mismatched input '(' expecting ';'
+	at com.puppycrawl.tools.checkstyle.JavaParser$CheckstyleErrorListener.syntaxError(JavaParser.java:252)
+	at org.antlr.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:41)
+	at org.antlr.v4.runtime.Parser.notifyErrorListeners(Parser.java:544)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportInputMismatch(DefaultErrorStrategy.java:327)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportError(DefaultErrorStrategy.java:139)
+	at com.puppycrawl.tools.checkstyle.CheckstyleParserErrorStrategy.recoverInline(CheckstyleParserErrorStrategy.java:38)
+	at org.antlr.v4.runtime.Parser.match(Parser.java:206)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.statement(JavaLanguageParser.java:6918)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.blockStatement(JavaLanguageParser.java:6100)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.block(JavaLanguageParser.java:6007)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.methodBody(JavaLanguageParser.java:2897)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.methodDeclaration(JavaLanguageParser.java:2856)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.memberDeclaration(JavaLanguageParser.java:2704)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.classBodyDeclaration(JavaLanguageParser.java:2631)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.classBody(JavaLanguageParser.java:2442)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.classDeclaration(JavaLanguageParser.java:1084)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.types(JavaLanguageParser.java:744)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.typeDeclaration(JavaLanguageParser.java:659)
+	at com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.compilationUnit(JavaLanguageParser.java:411)
+	at com.puppycrawl.tools.checkstyle.JavaParser.parse(JavaParser.java:99)
+	... 20 more
+Caused by: org.antlr.v4.runtime.InputMismatchException
+	... 35 more

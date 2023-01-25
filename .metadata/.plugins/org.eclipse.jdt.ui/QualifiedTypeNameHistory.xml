@@ -9,4 +9,6 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="components.naturalnumber.NaturalNumber"/>
     <fullyQualifiedTypeName name="components.naturalnumber.NaturalNumber2"/>
+    <fullyQualifiedTypeName name="components.list.List"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
