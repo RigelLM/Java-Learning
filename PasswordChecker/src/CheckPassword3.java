@@ -92,9 +92,9 @@ public final class CheckPassword3 {
                 condition++;
             }
             if (condition < 3) {
-                out.println("The password does not fit in the condition");
+                out.println("The password does not satisfy the criteria!");
             } else {
-                out.println("The password is recorded!");
+                out.println("The password satisfies the criteria!");
             }
         } else {
             out.println("The password has to be longer than 8!");
