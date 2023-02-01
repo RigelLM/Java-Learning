@@ -37,11 +37,11 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="D:\Desktop\Pseudoscience.zip"/>
 			<item value="D:\Desktop\MakeChange.zip"/>
 			<item value="D:\Desktop\Newton.zip"/>
 			<item value="D:\Desktop\HelloJack.zip"/>
 			<item value="D:\Desktop\RSSReader.zip"/>
-			<item value="D:\Desktop\Pseudoscience.zip"/>
 			<item value="D:\Desktop\HellowJack.zip"/>
 		</list>
 	</section>
