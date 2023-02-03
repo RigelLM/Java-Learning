@@ -64,16 +64,7 @@ public final class ABCDGuesser2 {
         return Double.parseDouble(input);
     }
 
-    /**
-     * Main method.
-     *
-     * @param args
-     *            the command line arguments
-     */
-    public static void main(String[] args) {
-        SimpleReader in = new SimpleReader1L();
-        SimpleWriter out = new SimpleWriter1L();
-
+    private static void ForLoop(SimpleReader in, SimpleWriter out) {
         double target = getPositiveDouble(in, out);
         double w = getPositiveDoubleNotOne(in, out);
         double x = getPositiveDoubleNotOne(in, out);
@@ -125,6 +116,19 @@ public final class ABCDGuesser2 {
         out.println("Relative Error = " + bestRelativeError + "%");
         out.println("powers = " + powers[0] + " " + powers[1] + " " + powers[2]
                 + " " + powers[3]);
+    }
+
+    /**
+     * Main method.
+     *
+     * @param args
+     *            the command line arguments
+     */
+    public static void main(String[] args) {
+        SimpleReader in = new SimpleReader1L();
+        SimpleWriter out = new SimpleWriter1L();
+
+        ForLoop(in, out);
         /*
          * Close input and output streams
          */
