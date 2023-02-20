@@ -1,41 +1,26 @@
-import components.simplereader.SimpleReader;
-import components.simplereader.SimpleReader1L;
-import components.simplewriter.SimpleWriter;
-import components.simplewriter.SimpleWriter1L;
-
-/**
- * Put a short phrase describing the program here.
- *
- * @author Put your name here
- *
- */
-public final class HelloJack {
-
-    /**
-     * Private constructor so this utility class cannot be instantiated.
-     */
-    private HelloJack() {
-    }
-
-    /**
-     * Main method.
-     *
-     * @param args
-     *            the command line arguments
-     */
+public class HelloJack {
     public static void main(String[] args) {
-        SimpleReader in = new SimpleReader1L();
-        SimpleWriter out = new SimpleWriter1L();
+        int rows = 4; // 金字塔的层数
+        int num = 1; // 打印的数字，从1开始
+        int spaces = 3; // 第一行开始的空格数
 
-        out.println("What's your name?");
-        String name = in.nextLine();
-        out.println("Hello, " + name + "!");
+        for (int i = 1; i <= rows; i++) {
+            // 打印空格
+            for (int j = 1; j <= spaces; j++) {
+                System.out.print(" ");
+            }
 
-        /*
-         * Close input and output streams
-         */
-        in.close();
-        out.close();
+            // 打印数字
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print(num);
+            }
+
+            // 换行
+            System.out.println();
+
+            // 计算下一行的空格数和数字
+            spaces--;
+            num++;
+        }
     }
-
 }
