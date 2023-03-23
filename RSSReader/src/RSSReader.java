@@ -169,6 +169,7 @@ public final class RSSReader {
         }
         out.println("<td>" + date + "</td>");
 
+        //print the source
         out.print("<td>");
         String source = "No source available";
         if (getChildElement(item, "source") != -1) {
@@ -187,6 +188,7 @@ public final class RSSReader {
         }
         out.println("</td>");
 
+        //print the title or the description
         out.print("<td>");
         String news = "No title available";
         if (item.child(getChildElement(item, "title"))

@@ -50,6 +50,7 @@ public final class IntegerRoot {
         int tooHigh = n + 1;
         int lowEnough = 0;
         int guess = (tooHigh + lowEnough) / 2;
+
         while (n < power(guess, r) || power(guess + 1, r) <= n) {
             if (n <= power(guess, r)) {
                 tooHigh = guess;

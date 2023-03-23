@@ -54,6 +54,7 @@ public final class RSSAggregator {
 
         out.println("<html>");
         out.println("<head>");
+        //print title
         String title = " ";
         if (channel.child(getChildElement(channel, "title"))
                 .numberOfChildren() != 0) {
@@ -63,6 +64,7 @@ public final class RSSAggregator {
         out.println("<title>" + title + "</title>");
         out.println("</head>");
         out.println("<body>");
+        //print link and description
         String link = "";
         link = channel.child(getChildElement(channel, "link")).child(0).label();
         out.println("<h1><a href=\"" + link + "\">" + title + "</a></h1>");
@@ -162,6 +164,7 @@ public final class RSSAggregator {
 
         out.println("<tr>");
 
+        //print the date
         String date = "No date available";
         if (getChildElement(item, "pubDate") != -1) {
             date = item.child(getChildElement(item, "pubDate")).child(0)
@@ -169,6 +172,7 @@ public final class RSSAggregator {
         }
         out.println("<td>" + date + "</td>");
 
+        //print the source and the link
         out.print("<td>");
         String source = "No source available";
         if (getChildElement(item, "source") != -1) {
@@ -187,6 +191,7 @@ public final class RSSAggregator {
         }
         out.println("</td>");
 
+        //print the title or the description
         out.print("<td>");
         String news = "No title available";
         if (getChildElement(item, "title") != -1
@@ -204,6 +209,7 @@ public final class RSSAggregator {
                     .label();
         }
 
+        //set up the link
         if (getChildElement(item, "link") != -1) {
             out.print("<a href=\""
                     + item.child(getChildElement(item, "link")).child(0).label()
@@ -244,6 +250,7 @@ public final class RSSAggregator {
             out = new SimpleWriter1L(file);
             outputHeader(rssFile.child(0), out);
 
+            //Process RSS feed
             for (int i = 0; i < rssFile.child(0).numberOfChildren(); i++) {
                 if (rssFile.child(0).child(i).label().equals("item")) {
                     processItem(rssFile.child(0).child(i), out);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="4.7.1" sequence="121" timestamp="1665014378979" analysisTimestamp="1665014378768" release="">
+<BugCollection version="4.7.1" sequence="124" timestamp="1677260282132" analysisTimestamp="1677260281606" release="">
   <Project projectName="RSSReader">
     <Jar>D:\Desktop\Java\RSSReader\bin\RSSReader.class</Jar>
     <AuxClasspathEntry>D:\Desktop\Java\RSSReader\bin</AuxClasspathEntry>
@@ -63,14 +63,15 @@
     </Field>
   </BugInstance>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Wed, 5 Oct 2022 19:59:38 -0400" total_classes="1" referenced_classes="20" total_bugs="0" total_size="121" num_packages="1" java_version="17.0.1" vm_version="17.0.1+12" cpu_seconds="0.67" clock_seconds="0.21" peak_mbytes="1272.97" alloc_mbytes="2048.00" gc_seconds="0.01">
+  <FindBugsSummary timestamp="Fri, 24 Feb 2023 12:38:01 -0500" total_classes="1" referenced_classes="20" total_bugs="0" total_size="121" num_packages="1" java_version="17.0.1" vm_version="17.0.1+12" cpu_seconds="2.05" clock_seconds="0.53" peak_mbytes="523.41" alloc_mbytes="2048.00" gc_seconds="0.01">
     <PackageStats package="" total_bugs="0" total_types="1" total_size="121">
       <ClassStats class="RSSReader" sourceFile="RSSReader.java" interface="false" size="121" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="58" invocations="408" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="16945" standardDeviationMicrosecondsPerInvocation="835"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="54" invocations="407" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="8661" standardDeviationMicrosecondsPerInvocation="481"/>
-      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="39" invocations="2" avgMicrosecondsPerInvocation="19652" maxMicrosecondsPerInvocation="35111" standardDeviationMicrosecondsPerInvocation="15459"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="188" invocations="407" avgMicrosecondsPerInvocation="463" maxMicrosecondsPerInvocation="6629" standardDeviationMicrosecondsPerInvocation="918"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="92" invocations="2" avgMicrosecondsPerInvocation="46239" maxMicrosecondsPerInvocation="79513" standardDeviationMicrosecondsPerInvocation="33273"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="79" invocations="408" avgMicrosecondsPerInvocation="195" maxMicrosecondsPerInvocation="3366" standardDeviationMicrosecondsPerInvocation="189"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="14" invocations="20" avgMicrosecondsPerInvocation="746" maxMicrosecondsPerInvocation="4718" standardDeviationMicrosecondsPerInvocation="1269"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
@@ -196,5 +197,8 @@
     <AppVersion sequence="118" timestamp="1664977666175" release="" codeSize="124" numClasses="1"/>
     <AppVersion sequence="119" timestamp="1664977708037" release="" codeSize="122" numClasses="1"/>
     <AppVersion sequence="120" timestamp="1665012138532" release="" codeSize="121" numClasses="1"/>
+    <AppVersion sequence="121" timestamp="1665014378979" release="" codeSize="121" numClasses="1"/>
+    <AppVersion sequence="122" timestamp="1677260175531" release="" codeSize="121" numClasses="1"/>
+    <AppVersion sequence="123" timestamp="1677260188840" release="" codeSize="121" numClasses="1"/>
   </History>
 </BugCollection>

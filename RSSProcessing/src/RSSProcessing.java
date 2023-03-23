@@ -52,6 +52,33 @@ public final class RSSProcessing {
     }
 
     /**
+     * Reports whether the given tag appears in the given {@code XMLTree}.
+     *
+     * @param xml
+     *            the {@code XMLTree}
+     * @param tag
+     *            the tag name
+     * @return true if the given tag appears in the given {@code XMLTree}, false
+     *         otherwise
+     * @ensures <pre>
+     * findTag =
+     *    [true if the given tag appears in the given {@code XMLTree}, false otherwise]
+     * </pre>
+     */
+    private static boolean findTag(XMLTree xml, String tag) {
+        boolean result = false;
+        for (int i = 0; i < xml.numberOfChildren(); i++) {
+            if (xml.child(i).isTag() && xml.child(i).label().equals(tag)) {
+                result = true;
+                break;
+            } else {
+                result = findTag(xml.child(i), tag);
+            }
+        }
+        return result;
+    }
+
+    /**
      * Processes one news item and outputs the title, or the description if the
      * title is not present, and the link (if available) with appropriate
      * labels.
