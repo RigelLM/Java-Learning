@@ -10,7 +10,7 @@ import components.simplewriter.SimpleWriter1L;
 /**
  * Utilities that could be used with RSA cryptosystems.
  *
- * @author Put your name here
+ * @author Lee Li
  *
  */
 public final class CryptoUtilities {
@@ -98,8 +98,12 @@ public final class CryptoUtilities {
          * else GCD(n, m) = GCD(m, n mod m)
          */
 
-        // TODO - fill in body
-
+        if (!m.isZero()) {
+            NaturalNumber remainder = n.divide(m);
+            reduceToGCD(m, remainder);
+            //updates n and make m to be zero to end the recursion
+            n.transferFrom(m);
+        }
     }
 
     /**
@@ -114,15 +118,16 @@ public final class CryptoUtilities {
 
         boolean result;
         NaturalNumber TWO = new NaturalNumber2(2);
-        NaturalNumber ZERO = new NaturalNumber2(0);
 
+        // Stores the remainder and add it back to n to restore it
         NaturalNumber remainder = n.divide(TWO);
-        result = remainder.equals(ZERO);
 
-        /*
-         * This line added just to make the program compilable. Should be
-         * replaced with appropriate return statement.
-         */
+        result = remainder.isZero();
+
+        // restore n
+        n.multiply(TWO);
+        n.add(remainder);
+
         return result;
     }
 
@@ -141,16 +146,54 @@ public final class CryptoUtilities {
      */
     public static void powerMod(NaturalNumber n, NaturalNumber p,
             NaturalNumber m) {
-        assert m.compareTo(new NaturalNumber2(1)) > 0 : "Violation of: m > 1";
-
         /*
          * Use the fast-powering algorithm as previously discussed in class,
          * with the additional feature that every multiplication is followed
          * immediately by "reducing the result modulo m"
          */
+        NaturalNumber TWO = new NaturalNumber2(2);
+        NaturalNumber ONE = new NaturalNumber2(1);
 
-        // TODO - fill in body
+        NaturalNumber initialBase = new NaturalNumber2();
+        initialBase.copyFrom(n);
 
+        if (p.isZero()) {
+            // return 1 if p is zero
+            n.copyFrom(ONE);
+        } else if (isEven(p)) {
+            p.divide(TWO);
+            powerMod(n, p, m);
+
+            // update n to be n*n
+            NaturalNumber temp = new NaturalNumber2();
+            temp.copyFrom(n);
+            n.multiply(temp);
+
+            // updates n to be n's p-th power modulo m
+            NaturalNumber remainder = n.divide(m);
+            n.copyFrom(remainder);
+
+            // restore p
+            p.multiply(TWO);
+        } else {
+            p.decrement();
+            p.divide(TWO);
+            powerMod(n, p, m);
+
+            // update n to be p/2-th power * p/2-th power * n
+            NaturalNumber temp = new NaturalNumber2();
+            temp.copyFrom(n);
+            n.multiply(temp);
+            n.multiply(initialBase);
+
+            // update n to be n's p-th power modulo m
+            NaturalNumber remainder = n.divide(m);
+            n.copyFrom(remainder);
+
+            // restore p
+            p.multiply(TWO);
+            p.increment();
+        }
     }
 
     /**
@@ -177,13 +220,29 @@ public final class CryptoUtilities {
         assert w.compareTo(n) < 0 : "Violation of: w < n - 1";
         n.increment();
 
-        // TODO - fill in body
+        NaturalNumber TWO = new NaturalNumber2(2);
+        NaturalNumber ONE = new NaturalNumber2(1);
 
-        /*
-         * This line added just to make the program compilable. Should be
-         * replaced with appropriate return statement.
-         */
-        return true;
+        // store w in two different variables so that it would not change
+        NaturalNumber firstW = new NaturalNumber2();
+        firstW.copyFrom(w);
+        NaturalNumber secondW = new NaturalNumber2();
+        secondW.copyFrom(w);
+
+        // check the first fact
+        powerMod(firstW, TWO, n);
+        boolean first = firstW.equals(ONE);
+
+        // check the second fact
+        n.decrement();
+        NaturalNumber tempPower = new NaturalNumber2();
+        tempPower.copyFrom(n);
+        n.increment();
+
+        powerMod(secondW, tempPower, n);
+        boolean second = !secondW.equals(ONE);
+
+        return first || second;
     }
 
     /**
@@ -250,13 +309,34 @@ public final class CryptoUtilities {
          * clause of isWitnessToCompositeness
          */
 
-        // TODO - fill in body
+        // if n==2 and 3, return true
+        if (n.compareTo(new NaturalNumber2(2)) == 0
+                || n.compareTo(new NaturalNumber2(3)) == 0) {
+            return true;
+            // if n==4, return false
+        } else if (n.compareTo(new NaturalNumber2(4)) == 0) {
+            return false;
+            // if n > 4
+        } else {
+            boolean result = true;
 
-        /*
-         * This line added just to make the program compilable. Should be
-         * replaced with appropriate return statement.
-         */
-        return true;
+            NaturalNumber four = new NaturalNumber2(4);
+            NaturalNumber two = new NaturalNumber2(2);
+
+            // set the range to be 0 to n-4(inclusive)
+            NaturalNumber range = new NaturalNumber2(n);
+            range.subtract(four);
+
+            for (int i = 0; i < 50; i++) {
+                // set the candidate to 2 to n-2(inclusive)
+                NaturalNumber candidate = randomNumber(range);
+                candidate.add(two);
+
+                result = !isWitnessToCompositeness(candidate, n);
+            }
+
+            return result;
+        }
     }
 
     /**
@@ -276,7 +356,16 @@ public final class CryptoUtilities {
          * the odd numbers only (why?), until n is likely prime
          */
 
-        // TODO - fill in body
+        NaturalNumber two = new NaturalNumber2(2);
+
+        // n = n - 1 + 2 for n is even
+        // n = n + 2 for n is odd
+        while (!isPrime2(n)) {
+            if (isEven(n)) {
+                n.decrement();
+            }
+            n.add(two);
+        }
 
     }
 

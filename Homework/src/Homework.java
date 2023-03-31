@@ -1,3 +1,5 @@
+import components.queue.Queue;
+import components.queue.Queue2;
 import components.simplereader.SimpleReader;
 import components.simplereader.SimpleReader1L;
 import components.simplewriter.SimpleWriter;
@@ -17,27 +19,9 @@ public final class Homework {
     private Homework() {
     }
 
-    /**
-     * Returns the {@code r}-th root of {@code n}.
-     *
-     * @param n
-     *            the number to which we want to apply the root
-     * @param r
-     *            the root
-     * @return the root of the number
-     * @requires n >= 0 and r > 0
-     * @ensures root ^ (r) <= n < (root + 1) ^ (r)
-     */
-    private static String reverse(String s) {
-        String result;
-        if (s.length() == 0) {
-            return s;
-        } else {
-            String sub = s.substring(1);
-            String reverseSub = reverse(sub);
-            result = reverseSub + s.charAt(0);
-        }
-        return result;
+    public void flip() {
+        Queue<T> q = new Queue2<>();
+        
     }
 
     /**
@@ -52,8 +36,16 @@ public final class Homework {
         /*
          * Put your main program code here; it may call myMethod as shown
          */
-        String s = "abcde";
-        out.println(reverse(s));
+        Queue<Integer> q = new Queue2<Integer>();
+        q.enqueue(1);
+        q.enqueue(2);
+        q.enqueue(3);
+        q.enqueue(4);
+        q.enqueue(5);
+        flip(q);
+        while (q.length() > 0) {
+            out.print(q.dequeue());
+        }
         /*
          * Close input and output streams
          */
