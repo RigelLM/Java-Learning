@@ -1,5 +1,3 @@
-import components.naturalnumber.NaturalNumber;
-import components.naturalnumber.NaturalNumber2;
 import components.simplewriter.SimpleWriter;
 import components.simplewriter.SimpleWriter1L;
 
@@ -26,11 +24,16 @@ public final class HelloWorld {
     public static void main(String[] args) {
         SimpleWriter out = new SimpleWriter1L();
 
-        NaturalNumber n = new NaturalNumber2(1);
-        NaturalNumber p = new NaturalNumber2(7);
-        NaturalNumber m = new NaturalNumber2(3);
+        String a = "12er56";
+        String b = a;
 
-        out.println(isEven(n));
+        b += "1234567890";
+
+        out.println("a = ");
+        out.println(a);
+
+        out.println("b = ");
+        out.println(b);
 
         out.close();
     }

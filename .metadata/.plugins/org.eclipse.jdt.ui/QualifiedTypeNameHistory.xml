@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="components.simplereader.SimpleReader1L"/>
-    <fullyQualifiedTypeName name="components.simplereader.SimpleReader"/>
     <fullyQualifiedTypeName name="components.random.Random"/>
     <fullyQualifiedTypeName name="components.random.Random1L"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
@@ -13,4 +11,7 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="components.queue.Queue"/>
     <fullyQualifiedTypeName name="components.queue.Queue2"/>
+    <fullyQualifiedTypeName name="components.set.Set"/>
+    <fullyQualifiedTypeName name="components.simplereader.SimpleReader"/>
+    <fullyQualifiedTypeName name="components.simplereader.SimpleReader1L"/>
 </qualifiedTypeNameHistroy>
