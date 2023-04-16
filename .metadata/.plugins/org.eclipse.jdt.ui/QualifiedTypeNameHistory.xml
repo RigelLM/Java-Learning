@@ -9,9 +9,14 @@
     <fullyQualifiedTypeName name="components.naturalnumber.NaturalNumber2"/>
     <fullyQualifiedTypeName name="components.list.List"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="components.queue.Queue"/>
     <fullyQualifiedTypeName name="components.queue.Queue2"/>
     <fullyQualifiedTypeName name="components.set.Set"/>
     <fullyQualifiedTypeName name="components.simplereader.SimpleReader"/>
     <fullyQualifiedTypeName name="components.simplereader.SimpleReader1L"/>
+    <fullyQualifiedTypeName name="Glossary"/>
+    <fullyQualifiedTypeName name="components.queue.Queue"/>
+    <fullyQualifiedTypeName name="components.map.Map"/>
+    <fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
 </qualifiedTypeNameHistroy>
